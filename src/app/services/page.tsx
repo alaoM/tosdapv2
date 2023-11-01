@@ -1,6 +1,7 @@
 import Image from "next/image"; 
 import Link from "next/link";
 import CTA from "@/components/CTA";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -23,68 +24,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Course Area
+        {/* Our Services
 ============================================ */}
-        <div id="course-area" className="course-area bg-gray pt-90 pb-60">
-          <div className="container">
-            {/* Section Title */}
-            <div className="row">
-              <div className="section-title text-center col-12 mb-45">
-                <h3 className="heading">course category</h3>
-                <div className="excerpt">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                    tempor magna aliqua
-                  </p>
-                </div>
-                <i className="icofont icofont-traffic-light" />
-              </div>
-            </div>
-            {/* Course Wrapper */}
-            <div className="course-wrapper row">
-              <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-                <div className="course-item text-center">
-                  <i className="icofont icofont-car-alt-4" />
-                  <h4>normal driving</h4>
-                  <p>
-                    There are many variations of items passag LoIpsum available
-                    the majority ratomised{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-                <div className="course-item text-center">
-                  <i className="icofont icofont-ambulance-cross" />
-                  <h4>defensive</h4>
-                  <p>
-                    There are many variations of items passag LoIpsum available
-                    the majority ratomised{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-                <div className="course-item text-center">
-                  <i className="icofont icofont-fast-delivery" />
-                  <h4>power booster</h4>
-                  <p>
-                    There are many variations of items passag LoIpsum available
-                    the majority ratomised{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-                <div className="course-item text-center">
-                  <i className="icofont icofont-rocket-alt-2" />
-                  <h4>crash level</h4>
-                  <p>
-                    There are many variations of items passag LoIpsum available
-                    the majority ratomised{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <Services />
+      
         {/* Pricing Area
 ============================================ */}
         <div

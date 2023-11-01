@@ -1,9 +1,20 @@
-"use client"
-import CTA from "@/components/CTA"; 
-import Image from "next/image"; 
+"use client";
+import CTA from "@/components/CTA";
+import Features from "@/components/Features";
+import Services from "@/components/Services";
+import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
+import { useEffect } from "react";
 
 export default function Home() {
+  /* useEffect(() => {
+    const shouldRefresh = true; // Add your condition here
+
+    if (shouldRefresh) {
+      window.location.reload();
+    }
+  }, []); */
   return (
     <>
       {/* Hero Slide Area
@@ -49,29 +60,18 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="1.2s"
                 >
-                  the best <span>safety</span> measures
+                  Convenient <span>driving</span>
                 </h1>
                 <p
                   className="wow fadeInUp"
                   data-wow-duration=".9s"
                   data-wow-delay="1.6s"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, minim
-                  veniamsed sed do <br />
-                  eiusmod tempor maksu rez ut labore magna do eiusmod
+                  Be driven in the comfort of your own car
                 </p>
                 <div className="button-group">
                   <a
-                    href="#"
-                    className="btn transparent wow fadeInLeft"
-                    data-wow-duration=".9s"
-                    data-wow-delay="2.4s"
-                  >
-                    book lesson
-                  </a>
-                  <a
-                    href="#"
-                    className="btn color wow fadeInLeft"
+                    className="btn color nivo-nextNav wow fadeInLeft"
                     data-wow-duration=".9s"
                     data-wow-delay="2s"
                   >
@@ -85,7 +85,7 @@ export default function Home() {
                 data-wow-delay="3s"
               >
                 <h5>
-                  <span>find your course</span>
+                  <span>Ride with Us</span>
                   <i className="icofont icofont-police-car" />
                 </h5>
                 <form action="#">
@@ -118,26 +118,6 @@ export default function Home() {
                       type="text"
                       placeholder="Date"
                     />
-                  </div>
-                  <div className="course-select">
-                    <i className="icofont icofont-copy-alt" />
-                    <select className="cusselect">
-                      <option>Course</option>
-                      <option>Course 1</option>
-                      <option>Course 2</option>
-                      <option>Course 3</option>
-                      <option>Course 4</option>
-                    </select>
-                  </div>
-                  <div className="course-select">
-                    <i className="icofont icofont-car-alt-4" />
-                    <select className="cusselect">
-                      <option>Car Type</option>
-                      <option>Car Type 1</option>
-                      <option>Car Type 2</option>
-                      <option>Car Type 3</option>
-                      <option>Car Type 4</option>
-                    </select>
                   </div>
                   <div className="course-submit">
                     <input type="submit" defaultValue="Send us" />
@@ -163,100 +143,22 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="1.2s"
                 >
-                  the best <span>safety</span> measures
+                  hassle-free and convenient <span>driving</span>
                 </h1>
                 <p
                   className="wow fadeInUp"
                   data-wow-duration=".9s"
                   data-wow-delay="1.6s"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, minim
-                  veniamsed sed do <br />
-                  eiusmod tempor maksu rez ut labore magna do eiusmod
+                  With Tosdap, you can sit back, relax, and let our professional
+                  drivers take the wheel of your car. Whether you&apos;re a busy
+                  professional, a parent on the go, or simply looking for a
+                  comfortable ride, our drivers are here to provide you with
+                  top-notch service. Enjoy the luxury of having your chauffeur,
+                  without the stress of driving yourself. So, buckle up and get
+                  ready for a smooth and enjoyable ride with Tosdap drivers. We
+                  can&apos;t wait to make your journeys a breeze.
                 </p>
-                <div className="button-group">
-                  <a
-                    href="#"
-                    className="btn transparent wow fadeInRight"
-                    data-wow-duration=".9s"
-                    data-wow-delay="2s"
-                  >
-                    book lesson
-                  </a>
-                  <a
-                    href="#"
-                    className="btn color wow fadeInRight"
-                    data-wow-duration=".9s"
-                    data-wow-delay="2.4s"
-                  >
-                    learn more
-                  </a>
-                </div>
-              </div>
-              <div
-                className="find-course-form float-right text-left wow fadeInUp"
-                data-wow-duration=".9s"
-                data-wow-delay="3s"
-              >
-                <h5>
-                  <span>find your course</span>
-                  <i className="icofont icofont-police-car" />
-                </h5>
-                <form action="#">
-                  <div className="course-input">
-                    <i className="icofont icofont-user-alt-3" />{" "}
-                    <input type="text" placeholder="Your Name" />
-                  </div>
-                  <div className="course-input">
-                    <i className="icofont icofont-envelope" />{" "}
-                    <input type="text" placeholder="Your E-mail" />
-                  </div>
-                  <div className="course-input">
-                    <i className="icofont icofont-phone" />{" "}
-                    <input type="text" placeholder="Phone" />
-                  </div>
-                  <div className="course-select">
-                    <i className="icofont icofont-clock-time" />
-                    <select className="cusselect">
-                      <option>Time</option>
-                      <option>9:00 AM</option>
-                      <option>12:00 PM</option>
-                      <option>03:00 PM</option>
-                      <option>06:00 PM</option>
-                    </select>
-                  </div>
-                  <div className="course-select course-date">
-                    <i className="icofont icofont-calendar" />
-                    <input
-                      className="date-picker"
-                      type="text"
-                      placeholder="Date"
-                    />
-                  </div>
-                  <div className="course-select">
-                    <i className="icofont icofont-copy-alt" />
-                    <select className="cusselect">
-                      <option>Course</option>
-                      <option>Course 1</option>
-                      <option>Course 2</option>
-                      <option>Course 3</option>
-                      <option>Course 4</option>
-                    </select>
-                  </div>
-                  <div className="course-select">
-                    <i className="icofont icofont-car-alt-4" />
-                    <select className="cusselect">
-                      <option>Car Type</option>
-                      <option>Car Type 1</option>
-                      <option>Car Type 2</option>
-                      <option>Car Type 3</option>
-                      <option>Car Type 4</option>
-                    </select>
-                  </div>
-                  <div className="course-submit">
-                    <input type="submit" defaultValue="Send us" />
-                  </div>
-                </form>
               </div>
             </div>
           </div>
@@ -277,233 +179,34 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="1.2s"
                 >
-                  the best <span>safety</span> measures
+                  hassle-free and convenient <span>driving</span>
                 </h1>
                 <p
                   className="wow fadeInUp"
                   data-wow-duration=".9s"
                   data-wow-delay="1.6s"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, minim
-                  veniamsed sed do <br />
-                  eiusmod tempor maksu rez ut labore magna do eiusmod
+                  With Tosdap, you can sit back, relax, and let our professional
+                  drivers take the wheel of your car. Whether you&apos;re a busy
+                  professional, a parent on the go, or simply looking for a
+                  comfortable ride, our drivers are here to provide you with
+                  top-notch service. Enjoy the luxury of having your chauffeur,
+                  without the stress of driving yourself. So, buckle up and get
+                  ready for a smooth and enjoyable ride with Tosdap drivers. We
+                  can&apos;t wait to make your journeys a breeze.
                 </p>
-                <div className="button-group">
-                  <a
-                    href="#"
-                    className="btn transparent wow fadeInLeft"
-                    data-wow-duration=".9s"
-                    data-wow-delay="2s"
-                  >
-                    book lesson
-                  </a>
-                  <a
-                    href="#"
-                    className="btn color wow fadeInRight"
-                    data-wow-duration=".9s"
-                    data-wow-delay="2s"
-                  >
-                    learn more
-                  </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Feature Area
+      {/* Feature Area and  Funfact Area
 ============================================ */}
-      <div id="feature-area" className="feature-area bg-gray pt-90 pb-90">
-        <div className="container">
-          {/* Section Title */}
-          <div className="row">
-            <div className="section-title text-center col-12 mb-45">
-              <h3 className="heading">our features</h3>
-              <div className="excerpt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                  tempor magna aliqua
-                </p>
-              </div>
-              <i className="icofont icofont-traffic-light" />
-            </div>
-          </div>
-          <div className="row">
-            {/* Left Feature */}
-            <div className="feature-wrapper feature-left text-right col-lg-4 col-12">
-              <div className="single-feature">
-                <div className="icon">
-                  <i className="icofont icofont-file-spreadsheet" />
-                </div>
-                <div className="text fix">
-                  <h4>Quick License</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet to be consectetur adipiscing
-                    elit, sed do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-              <div className="single-feature">
-                <div className="icon">
-                  <i className="icofont icofont-car-alt-4" />
-                </div>
-                <div className="text fix">
-                  <h4>Unlimited Car Support</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet to be consectetur adipiscing
-                    elit, sed do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-              <div className="single-feature">
-                <div className="icon">
-                  <i className="icofont icofont-video-alt" />
-                </div>
-                <div className="text fix">
-                  <h4>Video Classes</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet to be consectetur adipiscing
-                    elit, sed do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Feature Image */}
-            <div className="feature-image text-center col-lg-4 col-12">
-              <img src="/img/feature.png" alt="feature" />
-            </div>
-            {/* Right Feature */}
-            <div className="feature-wrapper feature-right text-left col-lg-4 col-12">
-              <div className="single-feature">
-                <div className="icon">
-                  <i className="icofont icofont-man-in-glasses" />
-                </div>
-                <div className="text fix">
-                  <h4>Experience Instructors</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet to be consectetur adipiscing
-                    elit, sed do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-              <div className="single-feature">
-                <div className="icon">
-                  <i className="icofont icofont-clock-time" />
-                </div>
-                <div className="text fix">
-                  <h4>Any Time Any Place</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet to be consectetur adipiscing
-                    elit, sed do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-              <div className="single-feature">
-                <div className="icon">
-                  <i className="icofont icofont-direction-sign" />
-                </div>
-                <div className="text fix">
-                  <h4>Learning Roads</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet to be consectetur adipiscing
-                    elit, sed do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Funfact Area
+      <Features />
+
+      {/* Our Services
 ============================================ */}
-      <div className="funfact-area overlay overlay-white overlay-80 pt-90 pb-60">
-        <div className="container">
-          <div className="row">
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-hat-alt" />
-              <h1 className="counter plus">6500</h1>
-              <p>graduted from here</p>
-            </div>
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-user-suited" />
-              <h1 className="counter">56</h1>
-              <p>teachers number</p>
-            </div>
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-history" />
-              <h1 className="counter">11</h1>
-              <p>years on market</p>
-            </div>
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-users-social" />
-              <h1 className="counter plus">550</h1>
-              <p>present students</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Course Area
-============================================ */}
-      <div id="course-area" className="course-area bg-gray pt-90 pb-60">
-        <div className="container">
-          {/* Section Title */}
-          <div className="row">
-            <div className="section-title text-center col-12 mb-45">
-              <h3 className="heading">course category</h3>
-              <div className="excerpt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                  tempor magna aliqua
-                </p>
-              </div>
-              <i className="icofont icofont-traffic-light" />
-            </div>
-          </div>
-          {/* Course Wrapper */}
-          <div className="course-wrapper row">
-            <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-              <div className="course-item text-center">
-                <i className="icofont icofont-car-alt-4" />
-                <h4>normal driving</h4>
-                <p>
-                  There are many variations of items passag LoIpsum available
-                  the majority ratomised{" "}
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-              <div className="course-item text-center">
-                <i className="icofont icofont-ambulance-cross" />
-                <h4>defensive</h4>
-                <p>
-                  There are many variations of items passag LoIpsum available
-                  the majority ratomised{" "}
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-              <div className="course-item text-center">
-                <i className="icofont icofont-fast-delivery" />
-                <h4>power booster</h4>
-                <p>
-                  There are many variations of items passag LoIpsum available
-                  the majority ratomised{" "}
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
-              <div className="course-item text-center">
-                <i className="icofont icofont-rocket-alt-2" />
-                <h4>crash level</h4>
-                <p>
-                  There are many variations of items passag LoIpsum available
-                  the majority ratomised{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services />
       {/* Video Area
 ============================================ */}
       <div className="video-area overlay overlay-black overlay-50">
@@ -1129,10 +832,7 @@ export default function Home() {
 
       {/* CTA Area
 ============================================ */}
-      <CTA /> 
-
-       
-       
+      <CTA />
     </>
   );
 }
