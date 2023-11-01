@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect } from "react";
+ import React, { useEffect } from "react";
 
 import type { Metadata } from "next";
 import "../styles/css/bootstrap.min.css";
@@ -13,8 +12,7 @@ import "./globals.css";
 import AppWrapper from "@/components/AppWrapper";
 import Script from "next/script";
 import Preloader from "@/components/Preloader";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
+ 
 
 export const metadata: Metadata = {
   title: "Tosdap Drivers",
@@ -25,8 +23,7 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
-  
+}) {  
   return (
     <html className="no-js" lang="en">
       <body>
