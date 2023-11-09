@@ -1,17 +1,17 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
 
-interface ServicesProps { }
+interface ServicesProps {}
 
 const Services: React.FC<ServicesProps> = (): ReactElement => {
+  let mobileNumber = "+2348107725001";
+  let text = "Hi, I own a vehicle from 2008 till date. I would like to join the largest community of vehicle owners to start earning today";
+  let text2 = "Hi, I have been driving for over 3 years now, I would like to sign up today to  start earning.";
+  let encodedText1 = encodeURIComponent(text);
+  let encodedText2 = encodeURIComponent(text2);
+  let link = `https://wa.me/${mobileNumber}?text=${encodedText1}`;
+  let link2 = `https://wa.me/${mobileNumber}?text=${encodedText2}`;
 
-  const signUpAsDriver = () => {
-    let text:string = "I would like to Sign Up to make money with Tosdap Drivers"
-    return (
-      <Link href="/#" className="btn transparent ">
-        Sign Up
-      </Link>)
-  }
   return (
     <>
       <div id="course-area" className="course-area bg-gray pt-90 pb-60">
@@ -70,9 +70,9 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Own a vehicle from 2008 till date? Join the largest community
                   of vehicle owners to start earning today!
                 </p>
-                <button onClick={signUpAsDriver} className="btn transparent ">
+                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn transparent">
                   Sign Up
-                </button>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
@@ -83,7 +83,7 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Have you been driving for over 3 years now, sign up today to
                   start earning.
                 </p>
-                <Link href="/#" className="btn transparent ">
+                <Link href={link2} target="_blank" rel="noreferrer noopener" className="btn transparent">
                   Sign Up
                 </Link>
               </div>
