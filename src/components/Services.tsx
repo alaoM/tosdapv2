@@ -1,9 +1,17 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
 
-interface ServicesProps {}
+interface ServicesProps { }
 
 const Services: React.FC<ServicesProps> = (): ReactElement => {
+
+  const signUpAsDriver = () => {
+    let text:string = "I would like to Sign Up to make money with Tosdap Drivers"
+    return (
+      <Link href="/#" className="btn transparent ">
+        Sign Up
+      </Link>)
+  }
   return (
     <>
       <div id="course-area" className="course-area bg-gray pt-90 pb-60">
@@ -62,9 +70,9 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Own a vehicle from 2008 till date? Join the largest community
                   of vehicle owners to start earning today!
                 </p>
-                <Link href="/#" className="btn transparent ">
+                <button onClick={signUpAsDriver} className="btn transparent ">
                   Sign Up
-                </Link>
+                </button>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-12 mb-30 fix">

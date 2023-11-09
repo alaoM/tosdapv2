@@ -12,11 +12,11 @@ const Navbar = () => {
             <div className="header-top-left text-left col-md-6 col-12">
               <p>
                 <i className="icofont icofont-envelope" />
-                <span>info@example.com</span>
+                <span><Link href="mailto:tosdapdrivers@gmail.com"> tosdapdrivers@gmail.com</Link></span>
               </p>
               <p>
                 <i className="icofont icofont-ui-call" />
-                <span>+012 345 678 102 </span>
+                <span><Link href="tel:+2348107725001">+234 810 772 5001</Link> </span>
               </p>
             </div>
             <div className="header-top-right text-right col-md-6 col-12">
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="row justify-content-between">
              <div className="navbar-header col-auto">
               <Link href="/" className="logo navbar-brand">
-                <img id="logo_img" src="/img/logo/logo.jpeg" alt="logo" />
+                <img id="logo_img" src="/img/logo/logo.png" alt="logo" />
               </Link>
             </div> 
             <div className="main-menu mean-menu col-auto">
