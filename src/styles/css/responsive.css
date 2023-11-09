@@ -146,7 +146,7 @@
 	  font-size: 18px;
 	}
 	.hero-slide-content h1 {
-	  font-size: 36px;
+	  font-size: 26px;
 	}
 	.hero-slide-content p {
 	  padding: 0;
@@ -290,7 +290,7 @@
 	  font-size: 18px;
 	}
 	.hero-slide-content p {
-	  display: none;
+	  display: block;
 	}
 	.hero-slide-content .button-group {
 	  margin-top: 0;

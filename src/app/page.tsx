@@ -46,8 +46,9 @@ export default function Home() {
         </div>
         <div id="htmlcaption1" className="nivo-html-caption">
           <div className="slide-table container">
-            <div className="table-cell">
-              <div className="hero-slide-content float-right text-right">
+            <div className="table-cell row">
+              
+              <div className="col-lg-8 hero-slide-content float-right text-right">
                 <h3
                   className="wow fadeInUp"
                   data-wow-duration=".9s"
@@ -60,15 +61,9 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="1.2s"
                 >
-                  Convenient <span>driving</span>
+                  Be <span>driven</span> in the comfort of your car
                 </h1>
-                <p
-                  className="wow fadeInUp"
-                  data-wow-duration=".9s"
-                  data-wow-delay="1.6s"
-                >
-                  Be driven in the comfort of your own car
-                </p>
+             
                 <div className="button-group">
                   <a
                     className="btn color nivo-nextNav wow fadeInLeft"
@@ -80,7 +75,7 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className="find-course-form float-left text-left wow fadeInUp"
+                className="col-lg-4 find-course-form float-left text-left wow fadeInUp mt-5"
                 data-wow-duration=".9s"
                 data-wow-delay="3s"
               >

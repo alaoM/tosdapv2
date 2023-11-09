@@ -31,11 +31,11 @@ const Navbar = () => {
       <div className="header-bottom sticky">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="navbar-header col-auto">
+             <div className="navbar-header col-auto">
               <Link href="/" className="logo navbar-brand">
                 <img id="logo_img" src="/img/logo/logo.jpeg" alt="logo" />
               </Link>
-            </div>
+            </div> 
             <div className="main-menu mean-menu col-auto">
               <nav>
                 <ul>

@@ -83,33 +83,6 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
           </div>
         </div>
       </div>
-
-      <div className="funfact-area overlay overlay-white overlay-80 pt-90 pb-60">
-        <div className="container">
-          <div className="row">
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-hat-alt" />
-              <h1 className="counter plus">6500</h1>
-              <p>graduted from here</p>
-            </div>
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-user-suited" />
-              <h1 className="counter">56</h1>
-              <p>teachers number</p>
-            </div>
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-history" />
-              <h1 className="counter">11</h1>
-              <p>years on market</p>
-            </div>
-            <div className="single-facts text-center col-md-3 col-sm-6 col-12 mb-30">
-              <i className="icofont icofont-users-social" />
-              <h1 className="counter plus">550</h1>
-              <p>present students</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
