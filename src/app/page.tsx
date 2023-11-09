@@ -243,19 +243,13 @@ export default function Home() {
           </div>
           {/* Gallery Filter */}
           <div className="gallery-filter text-center">
-            <button className="active" data-filter="*">
-              all
-            </button>
-            <button data-filter=".cars">cars</button>
-            <button data-filter=".students">students</button>
-            <button data-filter=".classroom">classroom</button>
-            <button data-filter=".exam">exam</button>
+           
           </div>
           {/* Gallery Grid */}
           <div className="gallery-grid row">
             <div className="gallery-item cars col-lg-3 col-md-4 col-12">
-              <a href="img/gallery/1.jpg" className="gallery-image image-popup">
-                <img src="/img/gallery/1.jpg" alt="" />
+              <a href="img/gallery/1.png" className="gallery-image image-popup">
+                <img src="/img/gallery/1.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
                   <h4>Class Test</h4>
@@ -263,8 +257,8 @@ export default function Home() {
               </a>
             </div>
             <div className="gallery-item cars exam col-lg-3 col-md-4 col-12">
-              <a href="img/gallery/2.jpg" className="gallery-image image-popup">
-                <img src="/img/gallery/2.jpg" alt="" />
+              <a href="img/gallery/2.png" className="gallery-image image-popup">
+                <img src="/img/gallery/2.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
                   <h4>Class Test</h4>
@@ -272,8 +266,8 @@ export default function Home() {
               </a>
             </div>
             <div className="gallery-item classroom col-lg-3 col-md-4 col-12">
-              <a href="img/gallery/3.jpg" className="gallery-image image-popup">
-                <img src="/img/gallery/3.jpg" alt="" />
+              <a href="img/gallery/3.png" className="gallery-image image-popup">
+                <img src="/img/gallery/3.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
                   <h4>Class Test</h4>
@@ -281,8 +275,8 @@ export default function Home() {
               </a>
             </div>
             <div className="gallery-item cars students exam col-lg-3 col-md-4 col-12">
-              <a href="img/gallery/4.jpg" className="gallery-image image-popup">
-                <img src="/img/gallery/4.jpg" alt="" />
+              <a href="img/gallery/4.png" className="gallery-image image-popup">
+                <img src="/img/gallery/4.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
                   <h4>Class Test</h4>
@@ -297,16 +291,7 @@ export default function Home() {
                   <h4>Class Test</h4>
                 </div>
               </a>
-            </div>
-            <div className="gallery-item students classroom col-lg-3 col-md-4 col-12">
-              <a href="img/gallery/6.jpg" className="gallery-image image-popup">
-                <img src="/img/gallery/6.jpg" alt="" />
-                <div className="content">
-                  <i className="icofont icofont-search" />
-                  <h4>Class Test</h4>
-                </div>
-              </a>
-            </div>
+            </div>          
           </div>
         </div>
       </div>
