@@ -4,17 +4,47 @@ import Features from "@/components/Features";
 import Services from "@/components/Services";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
-import { useEffect } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
+
+type Inputs = {
+  name: string
+  email: string
+  date: string
+  time: string
+  phoneNumber: string
+}
 
 export default function Home() {
-  /* useEffect(() => {
-    const shouldRefresh = true; // Add your condition here
 
-    if (shouldRefresh) {
-      window.location.reload();
-    }
-  }, []); */
+  const [formData, setFormData] = useState<Inputs>({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    time: '',
+    date: '',
+  });
+
+  console.log(formData);
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    console.log(formData);
+  }
+let encodedText2 = `${name}`
+  let link2 = `https://wa.me/${mobileNumber}?text=${encodedText2}`;
+
+
+
+
+
   return (
     <>
       {/* Hero Slide Area
@@ -47,7 +77,7 @@ export default function Home() {
         <div id="htmlcaption1" className="nivo-html-caption">
           <div className="slide-table container">
             <div className="table-cell row">
-              
+
               <div className="col-lg-8 hero-slide-content float-right text-right">
                 <h3
                   className="wow fadeInUp"
@@ -63,7 +93,7 @@ export default function Home() {
                 >
                   Be <span>driven</span> in the comfort of your car
                 </h1>
-             
+
                 <div className="button-group">
                   <a
                     className="btn color nivo-nextNav wow fadeInLeft"
@@ -83,22 +113,26 @@ export default function Home() {
                   <span>Ride with Us</span>
                   <i className="icofont icofont-police-car" />
                 </h5>
-                <form action="#">
+                <form >
                   <div className="course-input">
                     <i className="icofont icofont-user-alt-3" />{" "}
-                    <input type="text" placeholder="Your Name" />
+                    <input type="text" placeholder="Your Name" name="name" value={formData.name}
+                      onChange={handleInputChange} />
                   </div>
                   <div className="course-input">
                     <i className="icofont icofont-envelope" />{" "}
-                    <input type="text" placeholder="Your E-mail" />
+                    <input type="text" name="email" placeholder="Your E-mail" value={formData.email}
+                      onChange={handleInputChange} />
                   </div>
                   <div className="course-input">
                     <i className="icofont icofont-phone" />{" "}
-                    <input type="text" placeholder="Phone" />
+                    <input type="text" name="phoneNumber" placeholder="Phone" value={formData.phoneNumber}
+                      onChange={handleInputChange} />
                   </div>
                   <div className="course-select">
                     <i className="icofont icofont-clock-time" />
-                    <select className="cusselect">
+                    <select className="cusselect" name="time" value={formData.time}
+                      onChange={handleInputChange}>
                       <option>Time</option>
                       <option>9:00 AM</option>
                       <option>12:00 PM</option>
@@ -111,11 +145,14 @@ export default function Home() {
                     <input
                       className="date-picker"
                       type="text"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleInputChange}
                       placeholder="Date"
                     />
                   </div>
                   <div className="course-submit">
-                    <input type="submit" defaultValue="Send us" />
+                    <Link href="#" >Submit Now</Link>
                   </div>
                 </form>
               </div>
@@ -238,7 +275,7 @@ export default function Home() {
           </div>
           {/* Gallery Filter */}
           <div className="gallery-filter text-center">
-           
+
           </div>
           {/* Gallery Grid */}
           <div className="gallery-grid row">
@@ -286,7 +323,7 @@ export default function Home() {
                   <h4>Class Test</h4>
                 </div>
               </a>
-            </div>          
+            </div>
           </div>
         </div>
       </div>
