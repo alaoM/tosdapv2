@@ -22,17 +22,17 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
               <h3 className="heading">OUR SERVICES</h3>
               <div className="excerpt">
                 <p>
-                  Tosdap Called Drivers is here to cater to your transportation
+                  Tosdap  Called Driver is here to cater to your transportation
                   needs, whether you require our services on a regular or
                   occasional basis. We understand that your lifestyle can be
                   busy, and we&apos;re here to make it easier for you. Our
                   drivers are ready to adapt to your schedule and personal
                   preferences, ensuring that you have a reliable and convenient
                   transportation solution. Whether it&apos;s for work,
-                  appointments, or leisure activities, Tosdap Called Drivers is
+                  appointments, or leisure activities, Tosdap  Called Driver is
                   your go-to choice. Say goodbye to the stress of driving and
                   let us take care of getting you where you need to be. Sit
-                  back, relax, and enjoy the ride with Tosdap Called Driver.
+                  back, relax, and enjoy the ride with Tosdap  Called Driver.
                 </p>
               </div>
               <i className="icofont icofont-traffic-light" />
@@ -49,6 +49,9 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Our professional drivers will save you time and ensure your
                   comfort in your car for the entire day.
                 </p>
+                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn black transparent">
+                  Sign Up
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
@@ -60,6 +63,9 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   provide a range of services to cater to the special needs of
                   our clients. Access some of our amazing travel packages today!
                 </p>
+                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn black transparent">
+                  Sign Up
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-12 mb-30 fix">
@@ -70,7 +76,7 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Own a vehicle from 2008 till date? Join the largest community
                   of vehicle owners to start earning today!
                 </p>
-                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn transparent">
+                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn black transparent">
                   Sign Up
                 </Link>
               </div>
@@ -83,7 +89,7 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Have you been driving for over 3 years now, sign up today to
                   start earning.
                 </p>
-                <Link href={link2} target="_blank" rel="noreferrer noopener" className="btn transparent">
+                <Link href={link2} target="_blank" rel="noreferrer noopener" className="btn black transparent">
                   Sign Up
                 </Link>
               </div>

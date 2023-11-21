@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="header-top-left text-left col-md-6 col-12">
               <p>
                 <i className="icofont icofont-envelope" />
-                <span><Link href="mailto:tosdapdrivers@gmail.com"> tosdapdrivers@gmail.com</Link></span>
+                <span><Link href="mailto:Tosdap drivers@gmail.com"> Tosdap drivers@gmail.com</Link></span>
               </p>
               <p>
                 <i className="icofont icofont-ui-call" />
@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="header-top-right text-right col-md-6 col-12">
               <p>
                 <i className="icofont icofont-clock-time" />
-                <span>Mon - Sat : 8am - 9pm</span>
+                <span>Mon - Sat : 8am - 5pm</span>
               </p>
             </div>
           </div>

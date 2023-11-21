@@ -15,7 +15,7 @@ import Preloader from "@/components/Preloader";
  
 
 export const metadata: Metadata = {
-  title: "Tosdap Drivers",
+  title: "Tosdap  Drivers",
   description: "",
 };
 

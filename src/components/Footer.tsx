@@ -9,10 +9,10 @@ const Footer: React.FC<FooterProps> = (): ReactElement => {
       <div className="container">
         <div className="row">
           <div className="footer-widget text-left col-lg-6 col-md-6 col-12">
-            <h4 className="widget-title">about TOSDAP DRIVERS</h4>
+            <h4 className="widget-title">about Tosdap  DRIVERS</h4>
             <div className="about-widget">
               <p>
-              At TOSDAP, we provide comfortable rides in your own car, with our professional drivers behind the wheel.
+              At Tosdap , we provide comfortable rides in your own car, with our professional drivers behind the wheel.
               </p>
               <div className="widget-social fix">
                 <a href="#">
@@ -36,8 +36,7 @@ const Footer: React.FC<FooterProps> = (): ReactElement => {
               <div>
                 <h5>address:</h5>
                 <p>
-                  Flor. 4, House. 15, Block-C. <br />
-                  Banasree Main Road, Dhaka.
+                Magboro, Ogun State
                 </p>
               </div>
               <div>
@@ -49,10 +48,10 @@ const Footer: React.FC<FooterProps> = (): ReactElement => {
               <div>
                 <h5>e-mail</h5>
                 <p>
-                  <Link href="mailto:tosdapdrivers@gmail.com">
-                    tosdapdrivers@gmail.com
+                  <Link href="mailto:Tosdap drivers@gmail.com">
+                    Tosdap drivers@gmail.com
                   </Link>
-                  <Link href="#">tosdapdrivers.com.ng</Link>
+                  <Link href="#">Tosdap drivers.com.ng</Link>
                 </p>
               </div>
 
@@ -63,7 +62,7 @@ const Footer: React.FC<FooterProps> = (): ReactElement => {
         </div>
         <div className="footer-bottom text-center col-12">
           <p className="copyright">
-            Copyright © <a href="#">TOSDAP</a> ALL Right Reserved
+            Copyright © <a href="#">Tosdap </a> ALL Right Reserved
           </p>
         </div>
       </div>

@@ -80,7 +80,7 @@ const SliderComponent = () => {
                 data-wow-duration=".9s"
                 data-wow-delay="0.8s"
               >
-                welcome to TOSDAP DRIVERS
+                welcome to Tosdap  DRIVERS
               </h3>
               <h1
                 className="wow fadeInUp"
@@ -194,7 +194,7 @@ const SliderComponent = () => {
                 data-wow-duration=".9s"
                 data-wow-delay="0.8s"
               >
-                welcome to TOSDAP DRIVERS
+                welcome to Tosdap  DRIVERS
               </h3>
               <h1
                 className="wow fadeInUp"
@@ -308,7 +308,7 @@ const SliderComponent = () => {
                 data-wow-duration=".9s"
                 data-wow-delay="0.8s"
               >
-                welcome to TOSDAP DRIVERS
+                welcome to Tosdap  DRIVERS
               </h3>
               <h1
                 className="wow fadeInUp"

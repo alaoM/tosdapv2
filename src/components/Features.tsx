@@ -15,7 +15,7 @@ const Features: React.FC<FeaturesProps> = (): ReactElement => {
           <h3 className="heading">RIDE WITH US </h3>
           <div className="excerpt">
             <p>
-            With TOSDAP Called Drivers, we guarantee you a smooth and satisfying ride to any destination in the country. Our drivers are not only reliable and calm, but they also uphold the highest standards of integrity in every deal and contract. You can trust us to provide you and your organization with top-notch service, ensuring that your transportation needs are met with excellence. So why settle for anything less when you can choose Tosdap Called Drivers for all your driver-sourcing needs? Get ready for a journey filled with competence, reliability, and satisfaction.
+            With Tosdap Called Driver, we guarantee you a smooth and satisfying ride to any destination in the country. Our drivers are not only reliable and calm, but they also uphold the highest standards of integrity in every deal and contract. You can trust us to provide you and your organization with top-notch service, ensuring that your transportation needs are met with excellence. So why settle for anything less when you can choose Tosdap Called Driver for all your driver-sourcing needs? Get ready for a journey filled with competence, reliability, and satisfaction.
             </p>
           </div>
           <i className="icofont icofont-traffic-light" />

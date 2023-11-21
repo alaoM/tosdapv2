@@ -26,24 +26,24 @@ export default function Home() {
 ============================================ */}
       <div id="hero-area" className="hero-slider-area">
         <div id="hero-slider" className="nivoSlider slider-image">
-          <Image
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          <img
+            // fill
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/1.jpg"
             alt="main slider"
             title="#htmlcaption1"
-            priority={true}
+            // priority={true}
           />
-          <Image
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          <img
+            // fill
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/4.jpg"
             alt="main slider"
             title="#htmlcaption2"
           />
-          <Image
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          <img
+            // fill
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/3.jpg"
             alt="main slider"
             title="#htmlcaption3"
@@ -59,7 +59,7 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="0.8s"
                 >
-                  welcome to TOSDAP DRIVERS
+                  welcome to Tosdap  DRIVERS
                 </h3>
                 <h1
                   className="wow fadeInUp"
@@ -91,7 +91,7 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="0.8s"
                 >
-                  welcome to TOSDAP DRIVERS
+                  welcome to Tosdap  DRIVERS
                 </h3>
                 <h1
                   className="wow fadeInUp"
@@ -105,13 +105,13 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="1.6s"
                 >
-                  With Tosdap, you can sit back, relax, and let our professional
+                  With Tosdap , you can sit back, relax, and let our professional
                   drivers take the wheel of your car. Whether you&apos;re a busy
                   professional, a parent on the go, or simply looking for a
                   comfortable ride, our drivers are here to provide you with
                   top-notch service. Enjoy the luxury of having your chauffeur,
                   without the stress of driving yourself. So, buckle up and get
-                  ready for a smooth and enjoyable ride with Tosdap drivers. We
+                  ready for a smooth and enjoyable ride with Tosdap  drivers. We
                   can&apos;t wait to make your journeys a breeze.
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="0.8s"
                 >
-                  welcome to TOSDAP DRIVERS
+                  welcome to Tosdap  DRIVERS
                 </h3>
                 <h1
                   className="wow fadeInUp"
@@ -141,13 +141,13 @@ export default function Home() {
                   data-wow-duration=".9s"
                   data-wow-delay="1.6s"
                 >
-                  With Tosdap, you can sit back, relax, and let our professional
+                  With Tosdap , you can sit back, relax, and let our professional
                   drivers take the wheel of your car. Whether you&apos;re a busy
                   professional, a parent on the go, or simply looking for a
                   comfortable ride, our drivers are here to provide you with
                   top-notch service. Enjoy the luxury of having your chauffeur,
                   without the stress of driving yourself. So, buckle up and get
-                  ready for a smooth and enjoyable ride with Tosdap drivers. We
+                  ready for a smooth and enjoyable ride with Tosdap  drivers. We
                   can&apos;t wait to make your journeys a breeze.
                 </p>
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
                 <img src="/img/gallery/1.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>TOSDAP</h4>
+                  <h4>Tosdap </h4>
                 </div>
               </a>
             </div>
@@ -210,7 +210,7 @@ export default function Home() {
                 <img src="/img/gallery/2.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>TOSDAP</h4>
+                  <h4>Tosdap </h4>
                 </div>
               </a>
             </div>
@@ -219,7 +219,7 @@ export default function Home() {
                 <img src="/img/gallery/3.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>TOSDAP</h4>
+                  <h4>Tosdap </h4>
                 </div>
               </a>
             </div>
@@ -228,7 +228,7 @@ export default function Home() {
                 <img src="/img/gallery/4.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>TOSDAP</h4>
+                  <h4>Tosdap </h4>
                 </div>
               </a>
             </div>
@@ -237,7 +237,7 @@ export default function Home() {
                 <img src="/img/gallery/5.jpg" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>TOSDAP</h4>
+                  <h4>Tosdap </h4>
                 </div>
               </a>
             </div>
