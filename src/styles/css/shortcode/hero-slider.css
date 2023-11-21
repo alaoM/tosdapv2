@@ -8,11 +8,11 @@
   background: transparent;
   padding: 300px 0 230px;
 }
- .hero-bg {
+.hero-bg {
   background: rgba(0, 0, 0, 0) url("/img/slider/4.jpg") no-repeat scroll center center;
   -webkit-background-size: cover;
   background-size: cover;
-}  
+}
 .video-bg .video-container {
   z-index: -5 !important;
 }
@@ -43,7 +43,7 @@
   width: 3px;
 }
 .nivo-controlNav a.active {
-  height: 100vh;
+  height: 50px;
   margin: 0 6px;
   background-color: #DEC839;
 }

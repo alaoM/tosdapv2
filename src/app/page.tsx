@@ -26,24 +26,24 @@ export default function Home() {
 ============================================ */}
       <div id="hero-area" className="hero-slider-area">
         <div id="hero-slider" className="nivoSlider slider-image">
-          <img
-            // fill
-            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          <Image
+            fill
+             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/1.jpg"
             alt="main slider"
             title="#htmlcaption1"
-            // priority={true}
+            priority={true}
           />
-          <img
-            // fill
-            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          <Image
+             fill
+             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/4.jpg"
             alt="main slider"
             title="#htmlcaption2"
           />
-          <img
-            // fill
-            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          <Image
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/3.jpg"
             alt="main slider"
             title="#htmlcaption3"
