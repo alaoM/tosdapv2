@@ -45,6 +45,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   height: 32px;
   padding: 0 0 5px;
   width: 100%;
+  color: #fff
 }
 .form .input input:focus, .form .input textarea:focus {
   border-color: #dec839;

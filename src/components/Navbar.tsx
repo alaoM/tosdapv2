@@ -3,6 +3,12 @@ import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
+  
+  //Send message via whatsapp
+  let mobileNumber = process.env.mobileNumber;
+  let text = `Hi, I would love to book for a driving service`;
+  let encodedText = encodeURIComponent(text);
+  let link = `https://wa.me/${mobileNumber}?text=${encodedText}`;
   return (
     <div className="header-area header-absolute header-transparent">
       <div className="header-top d-none d-md-block">
@@ -39,20 +45,12 @@ const Navbar = () => {
             <div className="main-menu mean-menu col-auto">
               <nav>
                 <ul>
-                  <li className="active">
+                  <li>
                     <Link href="/">home</Link>
                   </li>
                   <li>
                     <Link href="/about-us">about</Link>
-                  </li>                 
-                  
-                  <li>
-                    <Link href="#">
-                      gallery
-                      <i className="icofont icofont-simple-down" />
-                    </Link>
-                    
-                  </li>
+                  </li>  
                   <li>
                     <Link href="/services">services</Link>
                   </li>
@@ -70,8 +68,8 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </li> */}
-                  <li>
-                    <Link href="/contact-us">contact</Link>
+                     <li className="active">
+                    <Link href={link}  >Book Us</Link>
                   </li>
                 </ul>
               </nav>

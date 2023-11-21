@@ -23,8 +23,8 @@ const Features: React.FC<FeaturesProps> = (): ReactElement => {
       </div>
       <div className="row">
         {/* Left Feature */}
-        <div className="feature-wrapper feature-left text-right col-lg-4 col-12">
-          <div className="single-feature">
+        <div className="feature-wrapper feature-left text-right col-lg-4 col-12 d-flex">
+          <div className="single-feature align-self-center">
             <div className="icon">
               <i className="icofont icofont-file-spreadsheet" />
             </div>
@@ -34,73 +34,29 @@ const Features: React.FC<FeaturesProps> = (): ReactElement => {
               To give you access to an unswerving provision of smart and intellectual drivers with great worth to enable your smooth movement anytime, anywhere in the country.
               </p>
             </div>
-          </div>
-          <div className="single-feature">
-            <div className="icon">
-              <i className="icofont icofont-car-alt-4" />
-            </div>
-            <div className="text fix">
-              <h4>Vision</h4>
-              <p>
-              To be the source of choice for individuals and companies in getting wonderful automobilist to handle your wheels
-              </p>
-            </div>
-          </div>
-          <div className="single-feature">
-            <div className="icon">
-              <i className="icofont icofont-video-alt" />
-            </div>
-            <div className="text fix">
-              <h4>Video Classes</h4>
-              <p>
-                Lorem ipsum dolor sit amet to be consectetur adipiscing
-                elit, sed do eiusmod tempor.
-              </p>
-            </div>
-          </div>
+          </div>       
         </div>
         {/* Feature Image */}
         <div className="feature-image text-center col-lg-4 col-12">
           <img src="/img/feature.png" alt="feature" />
         </div>
         {/* Right Feature */}
-        <div className="feature-wrapper feature-right text-left col-lg-4 col-12">
-          <div className="single-feature">
+
+
+
+        <div className="feature-wrapper feature-right text-left col-lg-4 col-12 d-flex">
+          <div className="single-feature align-self-center">
             <div className="icon">
               <i className="icofont icofont-man-in-glasses" />
             </div>
             <div className="text fix">
-              <h4>Experience Instructors</h4>
+            <h4>Vision</h4>
               <p>
-                Lorem ipsum dolor sit amet to be consectetur adipiscing
-                elit, sed do eiusmod tempor.
+              To be the source of choice for individuals and companies in getting wonderful automobilist to handle your wheels
               </p>
             </div>
           </div>
-          <div className="single-feature">
-            <div className="icon">
-              <i className="icofont icofont-clock-time" />
-            </div>
-            <div className="text fix">
-              <h4>Any Time Any Place</h4>
-              <p>
-                Lorem ipsum dolor sit amet to be consectetur adipiscing
-                elit, sed do eiusmod tempor.
-              </p>
-            </div>
-          </div>
-          <div className="single-feature">
-            <div className="icon">
-              <i className="icofont icofont-direction-sign" />
-            </div>
-            <div className="text fix">
-              <h4>Learning Roads</h4>
-              <p>
-                Lorem ipsum dolor sit amet to be consectetur adipiscing
-                elit, sed do eiusmod tempor.
-              </p>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

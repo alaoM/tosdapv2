@@ -4,7 +4,7 @@ import React, { ReactElement } from "react";
 interface ServicesProps {}
 
 const Services: React.FC<ServicesProps> = (): ReactElement => {
-  let mobileNumber = "+2348107725001";
+  let mobileNumber = process.env.mobileNumber;
   let text = "Hi, I own a vehicle from 2008 till date. I would like to join the largest community of vehicle owners to start earning today";
   let text2 = "Hi, I have been driving for over 3 years now, I would like to sign up today to  start earning.";
   let encodedText1 = encodeURIComponent(text);

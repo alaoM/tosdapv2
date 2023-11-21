@@ -1,5 +1,6 @@
 "use client";
 import CTA from "@/components/CTA";
+import ContactUs from "@/components/ContactUs";
 import Features from "@/components/Features";
 import Services from "@/components/Services";
 import Image from "next/image";
@@ -15,32 +16,6 @@ type Inputs = {
 }
 
 export default function Home() {
-
-  const [formData, setFormData] = useState<Inputs>({
-    name: '',
-    email: '',
-    phoneNumber: '',
-    time: '',
-    date: '',
-  });
-
-  console.log(formData);
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  }
-
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    console.log(formData);
-  }
-let encodedText2 = `${name}`
-  let link2 = `https://wa.me/${mobileNumber}?text=${encodedText2}`;
-
 
 
 
@@ -103,58 +78,6 @@ let encodedText2 = `${name}`
                     learn more
                   </a>
                 </div>
-              </div>
-              <div
-                className="col-lg-4 find-course-form float-left text-left wow fadeInUp mt-5"
-                data-wow-duration=".9s"
-                data-wow-delay="3s"
-              >
-                <h5>
-                  <span>Ride with Us</span>
-                  <i className="icofont icofont-police-car" />
-                </h5>
-                <form >
-                  <div className="course-input">
-                    <i className="icofont icofont-user-alt-3" />{" "}
-                    <input type="text" placeholder="Your Name" name="name" value={formData.name}
-                      onChange={handleInputChange} />
-                  </div>
-                  <div className="course-input">
-                    <i className="icofont icofont-envelope" />{" "}
-                    <input type="text" name="email" placeholder="Your E-mail" value={formData.email}
-                      onChange={handleInputChange} />
-                  </div>
-                  <div className="course-input">
-                    <i className="icofont icofont-phone" />{" "}
-                    <input type="text" name="phoneNumber" placeholder="Phone" value={formData.phoneNumber}
-                      onChange={handleInputChange} />
-                  </div>
-                  <div className="course-select">
-                    <i className="icofont icofont-clock-time" />
-                    <select className="cusselect" name="time" value={formData.time}
-                      onChange={handleInputChange}>
-                      <option>Time</option>
-                      <option>9:00 AM</option>
-                      <option>12:00 PM</option>
-                      <option>03:00 PM</option>
-                      <option>06:00 PM</option>
-                    </select>
-                  </div>
-                  <div className="course-select course-date">
-                    <i className="icofont icofont-calendar" />
-                    <input
-                      className="date-picker"
-                      type="text"
-                      name="date"
-                      value={formData.date}
-                      onChange={handleInputChange}
-                      placeholder="Date"
-                    />
-                  </div>
-                  <div className="course-submit">
-                    <Link href="#" >Submit Now</Link>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
@@ -262,14 +185,8 @@ let encodedText2 = `${name}`
         <div className="container">
           {/* Section Title */}
           <div className="row">
-            <div className="section-title text-center col-12 mb-45">
-              <h3 className="heading">golden gallery</h3>
-              <div className="excerpt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                  tempor magna aliqua
-                </p>
-              </div>
+            <div className="section-title text-center col-12 mb-45">          
+            
               <i className="icofont icofont-traffic-light" />
             </div>
           </div>
@@ -284,7 +201,7 @@ let encodedText2 = `${name}`
                 <img src="/img/gallery/1.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>Class Test</h4>
+                  <h4>TOSDAP</h4>
                 </div>
               </a>
             </div>
@@ -293,7 +210,7 @@ let encodedText2 = `${name}`
                 <img src="/img/gallery/2.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>Class Test</h4>
+                  <h4>TOSDAP</h4>
                 </div>
               </a>
             </div>
@@ -302,7 +219,7 @@ let encodedText2 = `${name}`
                 <img src="/img/gallery/3.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>Class Test</h4>
+                  <h4>TOSDAP</h4>
                 </div>
               </a>
             </div>
@@ -311,7 +228,7 @@ let encodedText2 = `${name}`
                 <img src="/img/gallery/4.png" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>Class Test</h4>
+                  <h4>TOSDAP</h4>
                 </div>
               </a>
             </div>
@@ -320,396 +237,18 @@ let encodedText2 = `${name}`
                 <img src="/img/gallery/5.jpg" alt="" />
                 <div className="content">
                   <i className="icofont icofont-search" />
-                  <h4>Class Test</h4>
+                  <h4>TOSDAP</h4>
                 </div>
               </a>
             </div>
           </div>
         </div>
       </div>
-      {/* Testimonial Area
+     
+   
+      {/* Contact Us Area
 ============================================ */}
-      <div
-        id="testimonial-area"
-        className="testimonial-area overlay overlay-white overlay-80 text-center pt-90 pb-90"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 col-12 mx-auto">
-              {/* Testimonial Image Slider */}
-              <div className="ti-slider mb-40">
-                <div className="single-slide">
-                  <div className="image fix">
-                    <img src="/img/testimonial/1.jpg" alt="" />
-                  </div>
-                </div>
-                <div className="single-slide">
-                  <div className="image fix">
-                    <img src="/img/testimonial/2.jpg" alt="" />
-                  </div>
-                </div>
-                <div className="single-slide">
-                  <div className="image fix">
-                    <img src="/img/testimonial/3.jpg" alt="" />
-                  </div>
-                </div>
-                <div className="single-slide">
-                  <div className="image fix">
-                    <img src="/img/testimonial/4.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              {/* Testimonial Content Slider */}
-              <div className="tc-slider">
-                <div className="single-slide">
-                  <p>
-                    There are many many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by hum domised words which is dont look believable.
-                  </p>
-                  <h5>momen bhuiyan</h5>
-                  <span>Graphic Designer</span>
-                </div>
-                <div className="single-slide">
-                  <p>
-                    There are many many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by hum domised words which is dont look believable.
-                  </p>
-                  <h5>Tasnim Akter</h5>
-                  <span>Graphic Designer</span>
-                </div>
-                <div className="single-slide">
-                  <p>
-                    There are many many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by hum domised words which is dont look believable.
-                  </p>
-                  <h5>momen bhuiyan</h5>
-                  <span>Graphic Designer</span>
-                </div>
-                <div className="single-slide">
-                  <p>
-                    There are many many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by hum domised words which is dont look believable.
-                  </p>
-                  <h5>Tasnim Akter</h5>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Slider Arrows */}
-        <button className="ts-arrows ts-prev">
-          <i className="icofont icofont-caret-left" />
-        </button>
-        <button className="ts-arrows ts-next">
-          <i className="icofont icofont-caret-right" />
-        </button>
-      </div>
-      {/* Instructor Area
-============================================ */}
-      <div id="instructor-area" className="instructor-area bg-gray pt-90 pb-60">
-        <div className="container">
-          {/* Section Title */}
-          <div className="row">
-            <div className="section-title text-center col-12 mb-45">
-              <h3 className="heading">Instructor</h3>
-              <div className="excerpt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                  tempor magna aliqua
-                </p>
-              </div>
-              <i className="icofont icofont-traffic-light" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-10 col-12 mx-auto">
-              {/* Instructor Tab Content */}
-              <div className="tab-content">
-                <div className="tab-pane fade show active" id="instructor-1">
-                  <div className="row">
-                    <div className="instructor-details text-left col-lg-7 col-12">
-                      <h4 className="instructor-name">jonathon joe</h4>
-                      <h5 className="instructor-title">Instructor</h5>
-                      <p>
-                        There are many many variations of passages of Lorem
-                        Ipsum available, but the majority have suffered
-                        alteration in some form, by hum domised words which is
-                        dont look even slightly believable.There are many many
-                        variations of passages of Lorem Ipsum available,but the
-                        on majority have suffered alteration in some form, by
-                        hum maksu rez words which is dont look even slightly
-                        believable.
-                      </p>
-                      <div className="instructor-social fix">
-                        <a href="#">
-                          <i className="icofont icofont-social-facebook" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-pinterest" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-twitter" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-google-plus" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="instructor-image col-lg-5 col-md-6 col-12">
-                      <img src="/img/instructor/big-1.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-pane fade" id="instructor-2">
-                  <div className="row">
-                    <div className="instructor-details text-left col-lg-7 col-12">
-                      <h4 className="instructor-name">Martin Adam</h4>
-                      <h5 className="instructor-title">Instructor</h5>
-                      <p>
-                        There are many many variations of passages of Lorem
-                        Ipsum available, but the majority have suffered
-                        alteration in some form, by hum domised words which is
-                        dont look even slightly believable.There are many many
-                        variations of passages of Lorem Ipsum available,but the
-                        on majority have suffered alteration in some form, by
-                        hum maksu rez words which is dont look even slightly
-                        believable.
-                      </p>
-                      <div className="instructor-social fix">
-                        <a href="#">
-                          <i className="icofont icofont-social-facebook" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-pinterest" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-twitter" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-google-plus" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="instructor-image col-lg-5 col-md-6 col-12">
-                      <img src="/img/instructor/big-2.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-pane fade" id="instructor-3">
-                  <div className="row">
-                    <div className="instructor-details text-left col-lg-7 col-12">
-                      <h4 className="instructor-name">Gabriel Stan</h4>
-                      <h5 className="instructor-title">Instructor</h5>
-                      <p>
-                        There are many many variations of passages of Lorem
-                        Ipsum available, but the majority have suffered
-                        alteration in some form, by hum domised words which is
-                        dont look even slightly believable.There are many many
-                        variations of passages of Lorem Ipsum available,but the
-                        on majority have suffered alteration in some form, by
-                        hum maksu rez words which is dont look even slightly
-                        believable.
-                      </p>
-                      <div className="instructor-social fix">
-                        <a href="#">
-                          <i className="icofont icofont-social-facebook" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-pinterest" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-twitter" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-google-plus" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="instructor-image col-lg-5 col-md-6 col-12">
-                      <img src="/img/instructor/big-3.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-pane fade" id="instructor-4">
-                  <div className="row">
-                    <div className="instructor-details text-left col-lg-7 col-12">
-                      <h4 className="instructor-name">Thomas Smith</h4>
-                      <h5 className="instructor-title">Instructor</h5>
-                      <p>
-                        There are many many variations of passages of Lorem
-                        Ipsum available, but the majority have suffered
-                        alteration in some form, by hum domised words which is
-                        dont look even slightly believable.There are many many
-                        variations of passages of Lorem Ipsum available,but the
-                        on majority have suffered alteration in some form, by
-                        hum maksu rez words which is dont look even slightly
-                        believable.
-                      </p>
-                      <div className="instructor-social fix">
-                        <a href="#">
-                          <i className="icofont icofont-social-facebook" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-pinterest" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-twitter" />
-                        </a>
-                        <a href="#">
-                          <i className="icofont icofont-social-google-plus" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="instructor-image col-lg-5 col-md-6 col-12">
-                      <img src="/img/instructor/big-4.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Instructor Tab List */}
-              <ul className="nav instructor-tab-list fix">
-                <li className="active">
-                  <a href="#instructor-1" data-toggle="tab">
-                    <img src="/img/instructor/1.jpg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#instructor-2" data-toggle="tab">
-                    <img src="/img/instructor/2.jpg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#instructor-3" data-toggle="tab">
-                    <img src="/img/instructor/3.jpg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#instructor-4" data-toggle="tab">
-                    <img src="/img/instructor/4.jpg" alt="" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Pricing Area
-============================================ */}
-      <div
-        id="pricing-area"
-        className="pricing-area overlay overlay-black overlay-40 pt-90 pb-60"
-      >
-        <div className="container">
-          {/* Section Title */}
-          <div className="row">
-            <div className="section-title title-white text-center col-12 mb-45">
-              <h3 className="heading">your pricing plan</h3>
-              <div className="excerpt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                  tempor magna aliqua
-                </p>
-              </div>
-              <i className="icofont icofont-traffic-light" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-12 mb-30">
-              <div className="single-pricing text-center">
-                <div className="pricing-head">
-                  <h4>basic</h4>
-                </div>
-                <div className="pricing-price">
-                  <h2>
-                    <span>$</span>200
-                  </h2>
-                </div>
-                <ul className="pricing-details">
-                  <li>2 Month Course</li>
-                  <li>3 Hours Per Day</li>
-                  <li>Weekly 1 Test</li>
-                  <li>20 Video Classes</li>
-                  <li>Driving Licence</li>
-                </ul>
-                <a href="#" className="pricing-action">
-                  choose plan
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mb-30">
-              <div className="single-pricing text-center">
-                <div className="pricing-head">
-                  <h4>upgrade</h4>
-                </div>
-                <div className="pricing-price">
-                  <h2>
-                    <span>$</span>300
-                  </h2>
-                </div>
-                <ul className="pricing-details">
-                  <li>3 Month Course</li>
-                  <li>4 Hours Per Day</li>
-                  <li>Weekly 2 Test</li>
-                  <li>25 Video Classes</li>
-                  <li>Driving Licence</li>
-                </ul>
-                <a href="#" className="pricing-action">
-                  choose plan
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mb-30">
-              <div className="single-pricing active text-center">
-                <div className="pricing-head">
-                  <h4>smart</h4>
-                </div>
-                <div className="pricing-price">
-                  <h2>
-                    <span>$</span>400
-                  </h2>
-                </div>
-                <ul className="pricing-details">
-                  <li>4 Month Course</li>
-                  <li>5 Hours Per Day</li>
-                  <li>Weekly 2 Test</li>
-                  <li>30 Video Classes</li>
-                  <li>Driving Licence</li>
-                </ul>
-                <a href="#" className="pricing-action">
-                  choose plan
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mb-30">
-              <div className="single-pricing text-center">
-                <div className="pricing-head">
-                  <h4>over smart</h4>
-                </div>
-                <div className="pricing-price">
-                  <h2>
-                    <span>$</span>500
-                  </h2>
-                </div>
-                <ul className="pricing-details">
-                  <li>6 Month Course</li>
-                  <li>5 Hours Per Day</li>
-                  <li>Weekly 3 Test</li>
-                  <li>35 Video Classes</li>
-                  <li>Driving Licence</li>
-                </ul>
-                <a href="#" className="pricing-action">
-                  choose plan
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     <ContactUs/>
       {/* FAQ Area
 ============================================ */}
       <div id="faq-area" className="faq-area bg-white pt-90 pb-60">
@@ -850,6 +389,8 @@ let encodedText2 = `${name}`
       {/* CTA Area
 ============================================ */}
       <CTA />
+
+
     </>
   );
 }
