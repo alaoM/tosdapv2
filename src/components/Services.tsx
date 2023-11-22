@@ -1,16 +1,22 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
 
-interface ServicesProps {}
+interface ServicesProps { }
 
 const Services: React.FC<ServicesProps> = (): ReactElement => {
   let mobileNumber = process.env.mobileNumber;
-  let text = "Hi, I own a vehicle from 2008 till date. I would like to join the largest community of vehicle owners to start earning today";
-  let text2 = "Hi, I have been driving for over 3 years now, I would like to sign up today to  start earning.";
+  let text = "Hi, I need a temporary driver";
+  let text2 = "Hi, I need a travel driver";
+  let text3 = "Hi, I own a vehicle from 2008 till date. I would like to join the largest community of vehicle owners to start earning today"
+  let text4 = "Hi, I have been driving for over 3 years now, I would like to sign up today to  start earning."
   let encodedText1 = encodeURIComponent(text);
   let encodedText2 = encodeURIComponent(text2);
+  let encodedText3 = encodeURIComponent(text3);
+  let encodedText4 = encodeURIComponent(text4);
   let link = `https://wa.me/${mobileNumber}?text=${encodedText1}`;
   let link2 = `https://wa.me/${mobileNumber}?text=${encodedText2}`;
+  let link3 = `https://wa.me/${mobileNumber}?text=${encodedText3}`;
+  let link4 = `https://wa.me/${mobileNumber}?text=${encodedText4}`;
 
   return (
     <>
@@ -63,7 +69,7 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   provide a range of services to cater to the special needs of
                   our clients. Access some of our amazing travel packages today!
                 </p>
-                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn black transparent">
+                <Link href={link2} target="_blank" rel="noreferrer noopener" className="btn black transparent">
                   Sign Up
                 </Link>
               </div>
@@ -76,7 +82,7 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Own a vehicle from 2008 till date? Join the largest community
                   of vehicle owners to start earning today!
                 </p>
-                <Link href={link} target="_blank" rel="noreferrer noopener" className="btn black transparent">
+                <Link href={link3} target="_blank" rel="noreferrer noopener" className="btn black transparent">
                   Sign Up
                 </Link>
               </div>
@@ -89,7 +95,7 @@ const Services: React.FC<ServicesProps> = (): ReactElement => {
                   Have you been driving for over 3 years now, sign up today to
                   start earning.
                 </p>
-                <Link href={link2} target="_blank" rel="noreferrer noopener" className="btn black transparent">
+                <Link href={link4} target="_blank" rel="noreferrer noopener" className="btn black transparent">
                   Sign Up
                 </Link>
               </div>

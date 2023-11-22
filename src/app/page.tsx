@@ -28,15 +28,15 @@ export default function Home() {
         <div id="hero-slider" className="nivoSlider slider-image">
           <Image
             fill
-             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/1.jpg"
             alt="main slider"
             title="#htmlcaption1"
             priority={true}
           />
           <Image
-             fill
-             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src="/img/slider/4.jpg"
             alt="main slider"
             title="#htmlcaption2"
@@ -185,8 +185,8 @@ export default function Home() {
         <div className="container">
           {/* Section Title */}
           <div className="row">
-            <div className="section-title text-center col-12 mb-45">          
-            
+            <div className="section-title text-center col-12 mb-45">
+
               <i className="icofont icofont-traffic-light" />
             </div>
           </div>
@@ -244,11 +244,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-     
-   
+
+
       {/* Contact Us Area
 ============================================ */}
-     <ContactUs/>
+      <ContactUs />
       {/* FAQ Area
 ============================================ */}
       <div id="faq-area" className="faq-area bg-white pt-90 pb-60">
@@ -257,12 +257,6 @@ export default function Home() {
           <div className="row">
             <div className="section-title text-center col-12 mb-45">
               <h3 className="heading">Frequently asked questions</h3>
-              <div className="excerpt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur maksu rez do eiusmod
-                  tempor magna aliqua
-                </p>
-              </div>
               <i className="icofont icofont-traffic-light" />
             </div>
           </div>
@@ -277,7 +271,7 @@ export default function Home() {
                         aria-expanded="true"
                         href="#faq-1"
                       >
-                        There are many variations of passages of Lorem Ipsum?
+                        Where can I hire a driver for long-distance vehicle transport?
                       </a>
                     </h4>
                   </div>
@@ -288,11 +282,15 @@ export default function Home() {
                   >
                     <div className="panel-body">
                       <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readaible is an content of the page
-                        when looking at its layout. The point of using Lorem
-                        Ipsum is that it has a more less normal.
-                      </p>
+                        To hire a driver for a means of safe and reliable long-distance vehicle transport, you have a few options:
+                      </p><ol>
+                        <li>Ask a family member, a friend, or a friend of a friend for a favour or pay them to drive your vehicle.</li>
+
+                        <li>Hire a professional driver who is professionally trained, has a clean driving record, and has cleared background checks.</li>
+                      </ol>
+                      The second option is the safe, reliable, and cost-effective option. We provide highly trained drivers.
+                      Call us Monday through Friday from 9 am to 5 pm
+
                     </div>
                   </div>
                 </div>
@@ -304,7 +302,8 @@ export default function Home() {
                         aria-expanded="false"
                         href="#faq-2"
                       >
-                        There are many variations of passages of Lorem Ipsum?
+                        Why hire a driver for a long-distance journey?
+                        Benefits?
                       </a>
                     </h4>
                   </div>
@@ -315,10 +314,8 @@ export default function Home() {
                   >
                     <div className="panel-body">
                       <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readaible is an content of the page
-                        when looking at its layout. The point of using Lorem
-                        Ipsum is that it has a more less normal.
+                        Relocating a vehicle is complicated, time-consuming, and risky. Driving hundreds of miles in different weather conditions is difficult for most people.
+                        Hiring a driver is a safe, cost-effective, and convenient option. Our drivers are professionally trained and have decades of experience. We provide a door-to-door service. Your driver will arrive on time to pick up your car and deliver it to the destination on schedule.
                       </p>
                     </div>
                   </div>
@@ -331,7 +328,7 @@ export default function Home() {
                         aria-expanded="false"
                         href="#faq-3"
                       >
-                        There are many variations of passages of Lorem Ipsum?
+                        How much does it cost to hire a driver to drive a long-distance?
                       </a>
                     </h4>
                   </div>
@@ -342,11 +339,16 @@ export default function Home() {
                   >
                     <div className="panel-body">
                       <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readaible is an content of the page
-                        when looking at its layout. The point of using Lorem
-                        Ipsum is that it has a more less normal.
+                        The cost to hire a driver for long-distance depends on the following:
                       </p>
+                      <ol>
+                        <li>You will pay for driver's transportation to get to the trip start point.
+                        </li><li>Distance from the start point to the destination, type of vehicle, and kind of roads will determine the number of days needed. The driver will have a daily service charge plus food.</li>
+                        <li>If multiple days are required, the driver will require an allowance for hotel stays. </li>
+                        <li>
+                          You will pay fuel, Toll, and other expenses related to the trip.</li>
+                      </ol>
+
                     </div>
                   </div>
                 </div>
@@ -358,7 +360,7 @@ export default function Home() {
                         aria-expanded="false"
                         href="#faq-4"
                       >
-                        There are many variations of passages of Lorem Ipsum?
+                        When should I finalize start the order for hiring a driver?
                       </a>
                     </h4>
                   </div>
@@ -369,10 +371,16 @@ export default function Home() {
                   >
                     <div className="panel-body">
                       <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readaible is an content of the page
-                        when looking at its layout. The point of using Lorem
-                        Ipsum is that it has a more less normal.
+                        Hiring a driver to transport your vehicle or drive you on a long-distance road trip has a few steps that have to be completed.</p>
+                      <p>
+                        You can see details in the questions above.</p>
+                      <p>
+                        We recommend you start the process as soon as you know the starting point, endpoint, and date. When customers call less than two weeks before the trip date, we might not have a driver available for that date.
+                        So please get in touch with us at least two weeks and preferably four weeks or more before your desired date.</p>
+                      <p>
+                        Call us Monday thru Friday from 9 am to 5 pm<br/>
+                        <Link href="tel: +2348107725001">
+                          08107725001</Link>
                       </p>
                     </div>
                   </div>
