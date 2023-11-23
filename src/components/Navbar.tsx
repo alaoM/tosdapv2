@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="header-top-left text-left col-md-6 col-12">
               <p>
                 <i className="icofont icofont-envelope" />
-                <span><Link href="mailto:Tosdap drivers@gmail.com"> Tosdap drivers@gmail.com</Link></span>
+                <span><Link href="mailto:Tosdapdrivers@gmail.com"> Tosdapdrivers@gmail.com</Link></span>
               </p>
               <p>
                 <i className="icofont icofont-ui-call" />

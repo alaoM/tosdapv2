@@ -342,7 +342,7 @@ export default function Home() {
                         The cost to hire a driver for long-distance depends on the following:
                       </p>
                       <ol>
-                        <li>You will pay for driver&apso;s transportation to get to the trip start point.
+                        <li>You will pay for driver&apos;s transportation to get to the trip start point.
                         </li><li>Distance from the start point to the destination, type of vehicle, and kind of roads will determine the number of days needed. The driver will have a daily service charge plus food.</li>
                         <li>If multiple days are required, the driver will require an allowance for hotel stays. </li>
                         <li>

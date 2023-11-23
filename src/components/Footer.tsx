@@ -15,17 +15,15 @@ const Footer: React.FC<FooterProps> = (): ReactElement => {
               At Tosdap , we provide comfortable rides in your own car, with our professional drivers behind the wheel.
               </p>
               <div className="widget-social fix">
-                <a href="#">
-                  <i className="icofont icofont-social-facebook" />
+            
+                <a href="https://instagram.com/tosdapdrivers?igshid=NGVhN2U2NjQ0Yg=="  target="_blank" rel="noopener noreferrer">
+                  <i className="icofont icofont-social-instagram" />
                 </a>
-                <a href="#">
-                  <i className="icofont icofont-social-pinterest" />
-                </a>
-                <a href="#">
+                <a href="https://x.com/tosdapdrivers?t=zmk6bMomWZcPddzA9yCSkg&s=09" target="_blank" rel="noopener noreferrer">
                   <i className="icofont icofont-social-twitter" />
                 </a>
-                <a href="#">
-                  <i className="icofont icofont-social-rss" />
+                <a href="https://www.facebook.com/tosdapdrivers?mibextid=9R9pXO" target="_blank" rel="noopener noreferrer">
+                  <i className="icofont icofont-social-facebook" />
                 </a>
               </div>
             </div>
@@ -48,10 +46,10 @@ const Footer: React.FC<FooterProps> = (): ReactElement => {
               <div>
                 <h5>e-mail</h5>
                 <p>
-                  <Link href="mailto:Tosdap drivers@gmail.com">
-                    Tosdap drivers@gmail.com
+                  <Link href="mailto:tosdapdrivers@gmail.com">
+                    tosdapdrivers@gmail.com
                   </Link>
-                  <Link href="#">Tosdap drivers.com.ng</Link>
+                  <Link href="#">tosdapdrivers.com.ng</Link>
                 </p>
               </div>
 
